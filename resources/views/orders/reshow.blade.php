@@ -20,8 +20,9 @@
     {{ csrf_field() }}
       <input class="form-control mr-sm-2" type="search" placeholder="Chercher" name="Search">
       <select name="ville" class="form-control mr-sm-2" >
+      <option value="0" >Maroc</option>
 @foreach($ville as $v)
-<option value="0" >Maroc</option>
+
 <option value="{{$v->id}}"  >{{$v->nom}}</option>
 @endforeach
       </select>
